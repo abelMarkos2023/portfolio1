@@ -1,0 +1,81 @@
+@import '../../vars.css';
+
+.section{
+   
+    background-color: var(--color-dark);
+    padding: 73px;
+    margin: 0 10%; 
+
+}
+.about{
+    font-size: 32px;
+    color: var(--color-text);
+    letter-spacing: 2px;
+    
+    text-transform: uppercase;
+}
+.aboutAvatar{
+    width: 35%;
+}
+.container{
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-text);
+}
+.listItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-image: linear-gradient(90deg,rgba(165,215,232,0.42) 0%,rgba(165,215,232,0) 100%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+.listItem:hover{
+    background-size: 100% 100%;
+}
+.aboutImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.desc h3{
+    font-size: 25px;
+}
+desc p{
+    font-size: 25px;
+}
+
+@media screen and (max-width:830px) {
+    .section{
+        padding: 0 50px;
+        margin: 0;
+    }
+    .container{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .aboutAvatar{
+        display: none;
+    }
+    
+
+}

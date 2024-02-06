@@ -1,0 +1,57 @@
+@import "../../vars.css";
+
+.contact{
+    margin: 45px 10%;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.left h2{
+    font-size: 72px;
+    font-weight: 800;
+}
+.left p{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.right{
+    list-style: none;
+    
+}
+.right li{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.right span{
+    font-size: 25px;
+    font-weight: 400;
+}
+@media screen and (max-width:840px) {
+    .contact{
+        flex-direction: column;
+    }
+    .right{
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .right li img{
+        width: 40px;
+    }
+    .right span{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
